@@ -1,0 +1,133 @@
+body {
+    background: #f9caf3;
+    margin: auto;
+}
+
+main {
+    padding-bottom: 40px;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    margin: auto; 
+    background: #c138bfa9;
+    margin-top: 30px;
+}
+
+header {
+    text-align: center;
+    width: 1000px;
+    height: 250px;
+    border-radius: 30px;
+    background: rgb(255,255,240);
+    background: linear-gradient(0deg, rgba(255,255,240,1) 0%, rgba(253,45,236,0.5424763655462185) 100%);
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: background 0.8s, transform 0.2s ease-in-out;
+    
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-20px); }
+    40% { transform: translateX(20px); }
+    60% { transform: translateX(-20px); }
+    80% { transform: translateX(20px); }
+    100% { transform: translateX(0); }
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 25px;
+}
+
+header h2 {
+    font-family: 'Playfair Display', serif;
+    padding: 5px;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 30px;
+}
+
+header:hover {
+    background: url(images/welcome.png)  center/cover;
+    animation: shake 0.8s ease-in-out;
+}
+
+
+header:hover h1,
+header:hover h2 {
+    opacity: 0;
+}
+
+main ul {
+    padding-right: 50px;
+    padding-left: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#column1,
+#column2,
+#column3 {
+    background-color: #4995d3ab;
+    border: 2px rgb(90, 46, 128) solid;
+    border-radius: 30px;
+    width: 320px;
+    height: 470px;
+    margin: auto;
+    padding-bottom: 10px;
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+main section h2 {
+    padding-top: 10px;
+}
+
+main section {
+    padding-left: 20px;
+}
+
+main ul li {
+    list-style-type: none;
+    background: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 18px;
+    width: 240px;
+    height: 25px;
+    margin: auto;
+    margin-bottom: 9px;
+    text-align: center;
+}
+
+main ul li a {
+    text-decoration: none;
+    color: #0e0128;
+    font-weight: 520;
+    text-align: center;
+}
+
+main ul li:hover {
+    background: rgba(245, 221, 241, 0.478);
+}
+
+
+footer {
+    height: 150px;
+    color: white;
+    text-align: center;
+    padding:100px;
+    text-decoration: none;
+}
+
+footer a{
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
