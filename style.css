@@ -73,23 +73,10 @@ main {
 #column1,
 #column2,
 #column3 {
-    background-color: #4995d3ab;
-    border: 2px rgb(90, 46, 128) solid;
-    border-radius: 30px;
-    width: 320px;
-    height: 470px;
     margin: auto;
     padding-bottom: 10px;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
     text-align: center;
-}
-
-main section h2 {
-    padding-top: 10px;
-}
-
-main section {
-    padding-left: 20px;
 }
 
 main ul li {
