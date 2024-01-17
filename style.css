@@ -50,6 +50,7 @@ header h2 {
 }
 
 header:hover {
+    cursor: pointer;
     background: url(images/welcome.png)  center/cover;
     animation: shake 0.8s ease-in-out;
 }
@@ -98,6 +99,7 @@ main ul li a {
 }
 
 main ul li:hover {
+    cursor: pointer;
     background: rgba(245, 221, 241, 0.478);
     opacity:0.8;
     transform:scale(1.1);
