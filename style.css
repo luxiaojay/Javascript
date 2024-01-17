@@ -54,7 +54,6 @@ header:hover {
     animation: shake 0.8s ease-in-out;
 }
 
-
 header:hover h1,
 header:hover h2 {
     opacity: 0;
@@ -100,6 +99,9 @@ main ul li a {
 
 main ul li:hover {
     background: rgba(245, 221, 241, 0.478);
+    opacity:0.8;
+    transform:scale(1.1);
+
 }
 
 
@@ -117,4 +119,5 @@ footer a{
     color: rgb(0, 0, 0);
     font-size: 20px;
 }
+
 
