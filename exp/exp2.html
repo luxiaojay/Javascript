@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Background Color</title>
+  <style>
+    body {
+      transition: background-color 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  // Ask the user to input a favorite color, then the background will change to that certain color
+
+  function changeBackgroundColor(color) {
+    document.body.style.backgroundColor = color;
+  }
+
+  // Array of available colors
+  var colors = ["red","yellow","orange", "blue", "green", "purple", ];
+
+  // Loop to repeatedly prompt the user until a valid color is entered
+  var userColor;
+  while (true) {
+    userColor = prompt("Choose your favorite color from the list:");
+
+    if (colors.includes(userColor.toLowerCase())) { // If a valid color is entered, exit the loop
+      break;  
+      
+    } else {
+
+     // If an invalid color is entered, display the error and continue the loop
+
+      prompt("Error! Please choose from the list.");
+    }
+  }
+
+  changeBackgroundColor(userColor.toLowerCase());
+
+</script>
+
+</body>
+</html>
