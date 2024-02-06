@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+    <title>It's Your Friend's Birthday</title>
+    <script src="script.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="landing-title">It's Your Friend's Birthday!</h1>
+    </header>
+    <main>    
+        
+        <div>
+            <h1 id="onsubmit-title"></h1>
+            <div id="story-wrapper">
+                <p id="story"></p>
+            </div>
+        </div>
+
+        <img id="bdaycake" src="images/bdaycake1.png" alt="Mystery Bday cake" width="500" height="600"> 
+
+        <div id="form-wrapper">
+            <form id="form">
+                <h2>Fill in to see what happened!</h2>
+                
+                <div class="input">
+                    <label for="name">Friend's name:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="input">
+                    <label for="food">A type of food:</label>
+                    <input type="text" name="food" id="food" required>
+                </div>
+
+                <div class="input">
+                    <label for="food2">Another food: </label>
+                    <input type="text" name="food2" id="food2" required>
+                </div >
+                
+
+                <div class="input">
+                    <label for="bodyPart">A Body Part:</label>
+                    <input type="text" name="bodyPart" id="bodyPart" required>
+                </div>
+                    
+                <div class="input">
+                    <label for="noun">A Noun:</label>
+                    <input type="text" name="noun" id="noun" required>
+                </div>    
+
+
+                <div class="input">
+                    <label for="bodyPart2">Another Body Part:</label>
+                    <input type="text" name="bodyPart2" id="bodyPart2" required>
+                </div>
+                
+                <div class="input">
+                    <label for="num">A Number:</label> 
+                    <input type="text" name="num" id="num" required>
+                </div>
+
+                <div class="input">
+                    <label for="adj">An Adjective:</label> 
+                    <input type="text" name="adj" id="adj" required>
+                </div>
+
+                <div class="input">
+                    <label for="sound">A random sound:</label> 
+                    <input type="text" name="sound" id="sound" required>
+                </div>
+
+
+                <div class="input">
+                    <label for="animal">Please Select One</label>
+                    <select id="choice" name="choice">
+                        <option value="would">would</option>
+                        <option value="wouldn't">wouldn't</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="SUBMIT" />
+
+            </form>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>By Yi-Chun Lu</p>
+    </footer>
+</body>
+</html>

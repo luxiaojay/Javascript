@@ -1,0 +1,120 @@
+body {
+    width: 80%;
+    min-width: 1400px;
+    margin: auto;
+    font-family: 'Playfair Display', serif;
+    margin-block: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(249,179,30,1) 100%);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#story-wrapper {
+    padding:20px;
+    background-color:#fbe07fd6;
+    border:solid 2px #421E09;
+    border-radius: 20px;
+    line-height: 30px;
+
+    display: none;
+}
+
+#story {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Input Form*/
+#form-wrapper {
+    padding:20px;
+    background-color:#fbe07fd6;
+    border:solid 2px #421E09;
+    border-radius: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/*Submit Button*/
+input[type=submit] {
+    border: solid #421E09 2px;
+    border-radius:20px;
+    padding: 5px;
+    font-family: 'Playfair Display', serif;
+    font-size:100%;
+    width:100%;
+    color:#421E09;
+    background-color:#FFF8DE
+    
+}
+
+input[type=submit]:hover {
+    color:#FFF8DE;
+    cursor: pointer;
+    background-color:#421E09;
+}
+
+input[type=text] {
+    border: solid 1px;
+    border-radius: 20px;
+}
+h1 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 550%;
+    color: #421E09;
+    margin-top: 0;
+    margin-bottom: 3%;
+    transition: transform 0.3s;
+}
+
+@keyframes tilt-left {
+    0% { transform: rotate(0); }
+    50% { transform: rotate(-2deg); }
+    100% { transform: rotate(0); }
+}
+
+@keyframes tilt-right {
+    0% { transform: rotate(0); }
+    50% { transform: rotate(2deg); }
+    100% { transform: rotate(0); }
+}
+
+h1:hover {
+    animation: tilt-left-right 1s ease infinite;
+}
+
+@keyframes tilt-left-right {
+    0% { transform: rotate(-2deg); }
+    50% { transform: rotate(2deg); }
+    100% { transform: rotate(-2deg); }
+}
+
+
+
+h2 {
+    margin-top: 0;
+}
+
+
+/*footer*/
+footer{
+    color: 3D312A;
+    max-width: 1200px;
+    padding-top: 2%;
+    padding-bottom: 4%;;
+}
+
