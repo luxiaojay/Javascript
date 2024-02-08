@@ -28,6 +28,8 @@
     onsubmitTitle.style.display = "block";
     onsubmitTitle.textContent = `Happy Birthday To ${bdayName.value} !`;
     img.src = "images/bdaycake2.png";
+    img.style.marginTop = "250px"; 
+    img.style.marginLeft = "50px";
     formWrapper.style.display = "none";
     storyWrapper.style.display = "block";
   

@@ -104,17 +104,16 @@ h1:hover {
 }
 
 
-
 h2 {
     margin-top: 0;
 }
-
+  
 
 /*footer*/
 footer{
     color: 3D312A;
     max-width: 1200px;
-    padding-top: 2%;
-    padding-bottom: 4%;;
+    padding-top: 80px;
+    padding-bottom: 20px;
 }
 
