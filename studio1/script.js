@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    console.log('JS is running');
+    console.log('reading js');
   })();
   
   const form = document.querySelector('#form');
@@ -28,8 +28,7 @@
     onsubmitTitle.style.display = "block";
     onsubmitTitle.textContent = `Happy Birthday To ${bdayName.value} !`;
     img.src = "images/bdaycake2.png";
-    img.style.marginTop = "250px"; 
-    img.style.marginLeft = "50px";
+    img.classList.add('bdaycake2'); 
     formWrapper.style.display = "none";
     storyWrapper.style.display = "block";
   
