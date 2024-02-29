@@ -1,0 +1,82 @@
+
+body {
+    color: #302f2f;
+    line-height: 1.5em;
+    padding: 50px;
+    background: #f4eeaf;
+    font-family: "Kode Mono", monospace;
+}
+
+main {
+    width: 1000px;
+    margin: auto;
+}
+div {
+    text-align: center;
+    padding: 15px;
+
+}
+
+button { 
+    padding: 20px;
+}
+
+
+#buttons {
+    margin: auto;
+}
+
+
+#intro {
+    width: 500px;
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1); 
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    border-bottom: 5px dotted grey;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+#introbutton {
+    font-family: "Kode Mono", monospace;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+#introbutton:hover {
+    background-color: #fa4a4a;
+    color: white;
+}
+
+
+#startgame {
+    background-color: #DB3A34;
+    border: none;
+    border-radius: 14px;
+}
+
+#startgame:hover {
+    background-color: white;
+    color: #fa4a4a;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
