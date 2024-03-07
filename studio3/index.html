@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game of PIG</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
-	<link href="styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <script src="script.js" defer></script>
+    <audio id="rollSound" src="sounds/rolling.flac"></audio>
+    <audio id="winSound" src="sounds/winning.mp3"></audio>
+
+
 </head>
 
 <body>
@@ -28,7 +30,7 @@
         <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that!</p>
         
         
-        <div id="buttons">
+        <div id="startbutton">
             <button id="introbutton">Let's Start!</button>
         </div>
     </section>
@@ -43,8 +45,8 @@
         <div id="profile">
             <div id="player1">
                 <h2>Player 1</h2>
-                <div id="image1">
-                <img src="images/player1.png" alt="player 1 headshot" width="250" height="250">
+                <div id="img1">
+                    <img src="images/player1.png" alt="player 1 headshot" width="250" height="250">
                 </div>
             </div>
             
@@ -52,8 +54,8 @@
 
             <div id="player2">
                 <h2>Player 2</h2>
-                <div id="image2">
-                <img src="images/player2.png" alt="player 2 headshot"width="270" height="270">
+                <div id="img2">
+                    <img src="images/player2.png" alt="player 2 headshot"width="270" height="270">
                 </div>
             </div>
         </div>
@@ -61,9 +63,17 @@
         <div id="game"></div>
         <div id="actions"></div>
 
+        <div id="score">
+            <div id="score1"></div>
+            <div id="score2"></div>
+        </div> 
+        
         
     </section>
 
+    <footer>
+        <p><a href="sources.html" target="_blank">Sources</a></p>
+    </footer>
 
 </body>
 </html>

@@ -1,9 +1,9 @@
 
 body {
-    color: #302f2f;
+    color: #2f2e2e;
     line-height: 1.5em;
     padding: 50px;
-    background: #f4eeaf;
+    background: #FFD182;
     font-family: "Kode Mono", monospace;
 }
 
@@ -11,22 +11,26 @@ main {
     width: 1000px;
     margin: auto;
 }
+
 div {
     text-align: center;
     padding: 15px;
 
 }
 
+
 button { 
     padding: 20px;
 }
 
 
-#buttons {
-    margin: auto;
+
+#game img {
+    margin: 30px;
 }
 
 
+/* intro page */
 #intro {
     width: 500px;
     background-color: white;
@@ -45,6 +49,10 @@ h1 {
     margin: 0;
     padding-top: 10px;
     padding-bottom: 25px;
+}
+
+#startbutton {
+    margin: auto;
 }
 
 #introbutton {
@@ -70,6 +78,113 @@ h1 {
 #startgame:hover {
     background-color: white;
     color: #fa4a4a;
+}
+
+/* game page */
+
+#maingame {
+    position: relative;
+}
+
+
+#game {
+    bottom: 100px;
+    width: 100%;
+    margin: auto;
+}
+
+#die{
+    /* position: absolute; */
+    top:30%;
+    width: 100%;
+}
+
+p {
+    line-height: 27px;
+    margin: 25px 0;
+}
+
+#profile {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.redText {
+    color: red;
+}
+
+.whiteText {
+    color: white;
+}
+
+#die {
+    /* display: flex; */
+    margin-top: 150px;
+}
+
+#die img {
+    margin: 50px;
+    margin-bottom: 0;
+}
+
+#score {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0 100px; */
+    position: absolute;
+    width: 81.5%;
+    bottom: 13%;
+    left: 9%;
+    z-index: -1;
+}
+
+#score1 {
+    /* line-height: 8px; */
+}
+
+#score h2 {
+    margin: 0;
+}
+
+#actions {
+    display: flex;
+    width: 100%;
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+/* roll the dice/pass button */
+
+#actions button {
+    margin: 0 20px;
+    color: white;
+    background-color: #323031;
+    border-radius: 20px;
+    box-shadow: 0 7px 5px #101010;
+    text-decoration: none;
+}
+
+#quit {
+    position: absolute;
+    top: 120%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  
+    padding: 20px 0; /* Optional: Add padding for better spacing */
+}
+
+footer a {
+    color: #2200ff;
 }
 
 
