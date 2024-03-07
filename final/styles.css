@@ -1,7 +1,7 @@
 
   
   body {
-    width: 100vw;
+    width: 100%;
     background: rgb(44, 134, 231);
     background: linear-gradient(0deg, rgba(195,34,182,0) 0%, rgba(47, 151, 211, 0.68) 75%);
     background-repeat: no-repeat;
@@ -19,6 +19,7 @@
     margin-bottom: 20px;
     padding: 25px;
     color: white;
+    text-align: center;
 
   }
 
@@ -33,9 +34,9 @@
   main article {
     background-color: #fff;
     padding: 4rem;
-    width: 90%;
+    width: 60%;
     margin: 0 auto;
-    line-height: 30px;
+    line-height: 45px;
     border-radius: 20px;
     font-family: 'Quicksand', sans-serif;
     margin-bottom: 30px;
