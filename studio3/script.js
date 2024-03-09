@@ -6,7 +6,7 @@
     const gameControl = document.getElementById('gamecontrol');
     const game = document.getElementById('game');
     const die = document.getElementById('die');
-    const score = document.getElementById('score');
+    const result = document.getElementById('result');
     const actionArea = document.getElementById('actions');
     const introButton = document.querySelector('#introbutton');
     const score1 = document.getElementById('score1');
@@ -117,16 +117,16 @@
 
     function checkWinningCondition() {
         if (gameData.score[gameData.index] > gameData.gameEnd) {
-            score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!!!</h2>`;
+            result.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!!!</h2>`;
             actionArea.innerHTML = '';
 
             document.getElementById('winSound').play();
 
             document.getElementById('quit').innerHTML = "Play Again?";
-        } else {
-            
-            showCurrentScore();
         }
+
+            showCurrentScore();
+        
     }
 
     function showCurrentScore() {
