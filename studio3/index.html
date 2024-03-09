@@ -16,61 +16,59 @@
 </head>
 
 <body>
-    <section id="intro" class="showing">
-        <h1>Game of PIG</h1>
-        <p>Rules of the Game:</p>
-        <ul>
-            <li>There are two players.</li>
-            <li>The player whose turn it is rolls the dice.</li>
-            <li>The total of the roll is added to the current player's score, unless either die comes up as a "one".</li>
-            <li>If a "one" is rolled, the player's turn is over, and it becomes the other player’s turn.</li>
-            <li>After each roll, the current player can either roll again (if no "one" was rolled) or pass to the other player.</li>
-            <li>The first player to get 30 points or higher wins.</li>
-        </ul>
-        <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that!</p>
-        
-        
-        <div id="startbutton">
-            <button id="introbutton">Let's Start!</button>
-        </div>
-    </section>
-
-
-    <section id="maingame" class="hidden">
-        <div id="gamecontrol">
-            <p>Let's pick the First Player randomly and Start the Game !<p>
-            <button id="startgame">Start</button>
-        </div>
-    
-        <div id="profile">
-            <div id="player1">
-                <h2>Player 1</h2>
-                <div id="img1">
-                    <img src="images/player1.png" alt="player 1 headshot" width="250" height="250">
-                </div>
-            </div>
+    <main>
+        <section id="intro" class="show-block">
+            <h1>Game of PIG</h1>
+            <p>Rules of the Game:</p>
+            <ul>
+                <li>There are two players.</li>
+                <li>The player whose turn it is rolls the dice.</li>
+                <li>The total of the roll is added to the current player's score, unless either die comes up as a "one".</li>
+                <li>If a "one" is rolled, the player's turn is over, and it becomes the other player’s turn.</li>
+                <li>After each roll, the current player can either roll again (if no "one" was rolled) or pass to the other player.</li>
+                <li>The first player to get 30 points or higher wins.</li>
+            </ul>
+            <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that!</p>
             
-            <div id="die"></div>
+            <div id="startbutton">
+                <button id="introbutton">Let's Start!</button>
+            </div>
+        </section>
 
-            <div id="player2">
-                <h2>Player 2</h2>
-                <div id="img2">
-                    <img src="images/player2.png" alt="player 2 headshot"width="270" height="270">
+        <section id="maingame" class="hidden">
+            <div id="gamecontrol">
+                <p>Let's pick the First Player randomly and Start the Game !<p>
+                <button id="startgame">Start</button>
+            </div>
+        
+            <div id="profile">
+                <div id="player1">
+                    <h2>Player 1</h2>
+                    <div id="img1">
+                        <img src="images/player1.png" alt="player 1 headshot">
+                    </div>
+                    <div id="score1"></div>
+                </div>
+                
+                <div id="die"></div>
+    
+                <div id="player2">
+                    <h2>Player 2</h2>
+                    <div id="img2">
+                        <img src="images/player2.png" alt="player 2 headshot">
+                    </div>
+                    <div id="score2"></div>
                 </div>
             </div>
-        </div>
-     
-        <div id="game"></div>
-        <div id="actions"></div>
+         
+            <div id="game"></div>
+            <div id="actions"></div>
+    
+         
+        </section>
 
-        <div id="score">
-            <div id="score1"></div>
-            <div id="score2"></div>
-        </div> 
-        
-        
-    </section>
-
+    </main>
+    
     <footer>
         <p><a href="sources.html" target="_blank">Sources</a></p>
     </footer>

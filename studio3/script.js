@@ -15,8 +15,7 @@
 
     introButton.addEventListener('click', function(event) {
         event.preventDefault();
-
-        document.getElementById('maingame').className = 'showing';
+        document.getElementById('maingame').className = 'show-flex';
         document.getElementById('intro').className = 'hidden';
     });
 
@@ -78,8 +77,8 @@
         gameData.roll2 = Math.floor(Math.random() * 6) + 1;
 
         // put the dice images on the screen; the dice array index needs to be one less than roll1 and roll2
-        die.innerHTML = `<img src="${gameData.dice[gameData.roll1-1]}" style="width: 150px; height: 150px;">
-                        <img src="${gameData.dice[gameData.roll2-1]}" style="width: 150px; height: 150px;">`;
+        die.innerHTML = `<img src="${gameData.dice[gameData.roll1-1]}"">
+                        <img src="${gameData.dice[gameData.roll2-1]}"">`;
         game.innerHTML = `<p>Roll the dice for ${gameData.players[gameData.index]}</p>`;
 
         gameData.rollSum = gameData.roll1 + gameData.roll2;
@@ -131,8 +130,8 @@
     }
 
     function showCurrentScore() {
-        score1.innerHTML = `<h2>Score:</h2><br><h2>${gameData.score[0]}</h2>`;
-        score2.innerHTML = `<h2>Score:</h2><br><h2>${gameData.score[1]}</h2>`;
+        score1.innerHTML = `<h2>Score: ${gameData.score[0]}</h2>`;
+        score2.innerHTML = `<h2>Score: ${gameData.score[1]}</h2>`;
     }
 
     

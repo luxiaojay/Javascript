@@ -1,44 +1,40 @@
-
 body {
     color: #2f2e2e;
     line-height: 1.5em;
     padding: 50px;
     background: #FFD182;
     font-family: "Kode Mono", monospace;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
-    width: 1000px;
     margin: auto;
+    width: 60%;
+    max-width: 1500px;
 }
 
 div {
     text-align: center;
     padding: 15px;
-
 }
-
 
 button { 
     padding: 20px;
 }
 
-
-
 #game img {
     margin: 30px;
 }
 
-
 /* intro page */
 #intro {
-    width: 500px;
+    width: 45%;
     background-color: white;
     margin: auto;
     padding: 30px;
     border-radius: 30px;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1); 
-
 }
 
 h1 {
@@ -68,7 +64,6 @@ h1 {
     color: white;
 }
 
-
 #startgame {
     background-color: #DB3A34;
     border: none;
@@ -81,22 +76,16 @@ h1 {
 }
 
 /* game page */
-
 #maingame {
-    position: relative;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
-
 
 #game {
     bottom: 100px;
     width: 100%;
     margin: auto;
-}
-
-#die{
-    /* position: absolute; */
-    top:30%;
-    width: 100%;
 }
 
 p {
@@ -107,7 +96,8 @@ p {
 #profile {
     display: flex;
     justify-content: space-between;
-    margin: 0 30px;
+    align-items: center;
+    width: 100%;
 }
 
 .redText {
@@ -118,45 +108,41 @@ p {
     color: white;
 }
 
-#die {
-    /* display: flex; */
-    margin-top: 150px;
+#player1, #player2, #die {
+    width: 30%;
+}
+
+#player1, #player2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+#player1 #img1, #player2 #img2 {
+    width: 100%;
+}
+
+#player1 #img1 img, #player2 #img2 img {
+    width: 100%;
 }
 
 #die img {
-    margin: 50px;
     margin-bottom: 0;
+    width: 40%;
 }
 
-#score {
-    display: flex;
-    justify-content: space-between;
-    /* margin: 0 100px; */
-    position: absolute;
-    width: 81.5%;
-    bottom: 13%;
-    left: 9%;
-    z-index: -1;
-}
-
-#score1 {
-    /* line-height: 8px; */
-}
-
-#score h2 {
-    margin: 0;
+#score1, #score2 {
+    width: 100%;
 }
 
 #actions {
     display: flex;
     width: 100%;
-    /* margin: auto; */
     justify-content: center;
     align-items: center;
     padding: 0;
 }
-
-/* roll the dice/pass button */
 
 #actions button {
     margin: 0 20px;
@@ -168,30 +154,28 @@ p {
 }
 
 #quit {
-    position: absolute;
-    top: 120%;
-    transform: translateY(-50%);
     border-radius: 5px;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin: auto;
+    width: 60%;
+    max-width: 1500px;
     text-align: center;
-  
-    padding: 20px 0; /* Optional: Add padding for better spacing */
 }
 
 footer a {
     color: #2200ff;
 }
 
-
 .hidden {
     display: none;
 }
 
-.showing {
+.show-block {
     display: block;
+}
+
+.show-flex {
+    display: flex;
 }
