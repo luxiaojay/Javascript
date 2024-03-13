@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('./images/background.svg');
+  background-repeat: no-repeat;
+  background-color: black;
+  object-fit: contain;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 2000px;
+}
+
+h1{
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+h2{
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+p{
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+
+.title-wrapper {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+
+}
+
+.title-wrapper {
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 4rem;    
+  }
+  
+  /* Flickering animation */
+  @keyframes flicker {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+.img-outer-wrapper {
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-inner-wrapper {
+  min-width: 180px;
+  width: 10%;
+  height: 100%;
+  position: relative;
+  margin-left: -80px; 
+
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-30px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.img-flipper {
+  position: absolute;
+  width: 100%;
+  transform: translateY(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+.img-flipper:hover {
+  cursor: pointer;
+}
+
+.img-flipper:hover .clickable-img {
+  filter: brightness(1) invert(0);
+  transform: rotateY(180deg);
+
+}
+.clickable-img {
+  width: 100%;
+  filter: brightness(0) invert(1);
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+}
+
+.img-inner-wrapper:nth-of-type(1) .img-flipper {
+  top: 30%;
+  left: 30%;
+}
+   
+.img-inner-wrapper:nth-of-type(2) .img-flipper {
+  top: 50%;
+}
+
+.img-inner-wrapper:nth-of-type(3) .img-flipper {
+  top: 5%;
+  left: 25%;
+}
+
+.img-inner-wrapper:nth-of-type(4) .img-flipper {
+  top: 45%;
+  right: 20%;
+}
+
+.img-inner-wrapper:nth-of-type(5) .img-flipper {
+  top: 10%;
+  right: 30%;
+}
+
+.modal-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 1;
+  z-index: 100;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: rgb(253, 252, 196);
+  width: 60%;
+  height: 70%;
+  display: none;
+  color: black;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.modal-cancel {
+  border: solid;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.modal-cancel:hover {
+  cursor: pointer;
+  background-color: #666666;
+  color: #ffffff;
+}
+
+.modal-content-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 20px;
+}
+
+.modal-img {
+  height: 60%;
+}
+
+.modal-content {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px;
+  line-height: 50px;
+}
