@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
   <script defer src="index.js"></script>
@@ -24,30 +27,58 @@
 
       <div class="img-inner-wrapper">
         <div class="img-flipper">
-          <img class="clickable-img" src="./images/cuisine_1.png" alt="cuisine_1_back" data-modal="modal-1">
+          <div class="flipper-front">
+            <img class="clickable-img" src="./images/cuisine_1.png" alt="cuisine_1_back" data-modal="modal-1">
+          </div>
+          <div class="flipper-back">
+            <img class="clickable-img clickable-back-img" src="./images/cuisine_1.png" alt="cuisine_1_back" data-modal="modal-1">
+          </div>
         </div>
       </div>
-
 
       <div class="img-inner-wrapper">
         <div class="img-flipper">
-          <img class="clickable-img" src="./images/cuisine_2.png" alt="cuisine_2" data-modal="modal-2">
+          <div class="flipper-front">
+            <img class="clickable-img" src="./images/cuisine_2.png" alt="cuisine_2" data-modal="modal-2">
+          </div>
+          <div class="flipper-back">
+            <img class="clickable-img clickable-back-img" src="./images/cuisine_2.png" alt="cuisine_2" data-modal="modal-2">
+          </div>
         </div>
       </div>
 
       <div class="img-inner-wrapper">
         <div class="img-flipper">
-          <img class="clickable-img" src="./images/cuisine_3.png" alt="cuisine_3" data-modal="modal-3">
+          <div class="flipper-front">
+            <img class="clickable-img" src="./images/cuisine_3.png" alt="cuisine_3" data-modal="modal-3">
+          </div>
+          <div class="flipper-back">
+            <img class="clickable-img clickable-back-img" src="./images/cuisine_3.png" alt="cuisine_3" data-modal="modal-3">
+          </div>
         </div>
       </div>
+
       <div class="img-inner-wrapper">
         <div class="img-flipper" >
-          <img class="clickable-img" src="./images/cuisine_4.png" alt="cuisine_4" data-modal="modal-4">
+          <div class="flipper-front">
+            <img class="clickable-img" src="./images/cuisine_4.png" alt="cuisine_4" data-modal="modal-4">
+          </div>
+          <div class="flipper-back">
+            <img class="clickable-img clickable-back-img" src="./images/cuisine_4.png" alt="cuisine_4" data-modal="modal-4">
+          </div>
+          
         </div>
       </div>
+
       <div class="img-inner-wrapper">
         <div class="img-flipper">
-          <img class="clickable-img" src="./images/cuisine_5.png" alt="cuisine_5" data-modal="modal-5">
+          <div class="flipper-front">
+            <img class="clickable-img" src="./images/cuisine_5.png" alt="cuisine_5" data-modal="modal-5">
+          </div>
+          <div class="flipper-back">
+            <img class="clickable-img clickable-back-img" src="./images/cuisine_5.png" alt="cuisine_5" data-modal="modal-5">
+          </div>
+          
         </div>
       </div>
     </div>
@@ -57,17 +88,20 @@
     <div class="modal-wrapper" id="modal-wrapper">
 
       <div id="modal-1" class="modal">
+        <img class="modal-cloud" src="./images/background_cloud.png" alt="modal cloud shape background">
         <button class="modal-cancel">X</button>
         <div class="modal-content-wrapper">
           <img class="modal-img" src="./images/cuisine_1.png" alt="cuisine_1">
           <div class="modal-content">
             <h2>WONTON NOODLES</h2>
-            <p>This delicious wonton noodles is from Costco, just simply put it in the microwave for 3 mintues with the lid on, then a fancy and warming noodles and soup is made! However, I think the soup is not that flavorful, so my another way of eating it is to make the noodles as dry noodles and dip only the noodles into the “Lao Gan Ma” sauce and drink a sip of soup as needed. Therefore, you can enjoy both version with the soup or with the dried noodle version!</p>
+            <p>This delicious wonton noodles is from Costco, just simply put it in the microwave for 3 mintues with the lid on, then a fancy and warming noodles and soup is made! However, I think the soup is not that flavorful, so my another way of eating it is to make the noodles as dry and dip em into the “Lao Gan Ma” sauce and take a sip of the soup</p>
           </div>
         </div>
+        <h3>12:32 PM</h3>
       </div>
 
       <div id="modal-2" class="modal">
+        <img class="modal-cloud" src="./images/background_cloud.png" alt="modal cloud shape background">
         <button class="modal-cancel">X</button>
         <div class="modal-content-wrapper">
           <img class="modal-img" src="./images/cuisine_2.png" alt="cuisine_2">
@@ -76,9 +110,11 @@
             <p>T% is a bobashop that closes later in Davis, so it's definitely a place to consider if you're hungry at night! To be honest, their boba is alright, I think there are other boba places that are better. Besides the boba, their corndog with the half cheese and half corndog with potatos is a to-go order along with the boba!</p>
           </div>
         </div>
+        <h3>11:00 PM</h3>
       </div>
 
       <div id="modal-3" class="modal">
+        <img class="modal-cloud" src="./images/background_cloud.png" alt="modal cloud shape background">
         <button class="modal-cancel">X</button>
         <div class="modal-content-wrapper">
           <img class="modal-img" src="./images/cuisine_3.png" alt="cuisine_3">
@@ -88,9 +124,11 @@
             </p>
           </div>
         </div>
+        <h3>01:20 AM</h3>
       </div>
 
       <div id="modal-4" class="modal">
+        <img class="modal-cloud" src="./images/background_cloud.png" alt="modal cloud shape background">
         <button class="modal-cancel">X</button>
         <div class="modal-content-wrapper">
           <img class="modal-img" src="./images/cuisine_4.png" alt="cuisine_4">
@@ -99,9 +137,11 @@
             <p>Panda Express is the first restaurant that pops up when I don't know what to eat for a meal. My favortie and always go-to order is Half Chow-mein, half friend rice with orange chicken and beijing beef! Remember to get it earlier since Panda Expresses closes at 10:00 pm!</p>
           </div>
         </div>
+        <h3>10:00 PM</h3>
       </div>
 
       <div id="modal-5" class="modal">
+        <img class="modal-cloud" src="./images/background_cloud.png" alt="modal cloud shape background">
         <button class="modal-cancel">X</button>
         <div class="modal-content-wrapper">
           <img class="modal-img" src="./images/cuisine_5.png" alt="cuisine_5">
@@ -111,6 +151,7 @@
              <br> First, you boil some noodles and dry them. <br> Second. You make the sauce with shacha sauce, soy sauce, sugar and vinegar.<br> Third, You pour in the sauce and mix it with the noodles! </p>
           </div>
         </div>
+        <h3>12:03 AM</h3>
       </div>
 
     </div>
